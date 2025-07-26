@@ -3,7 +3,7 @@ services:
   stirling-pdf:
     image: ghcr.io/stirling-tools/stirling-pdf:latest
     ports:
-      - '8080:8080'
+      - '8085:8080'
     volumes:
       - ./StirlingPDF/trainingData:/usr/share/tessdata # Required for extra OCR languages
       - ./StirlingPDF/extraConfigs:/configs
